@@ -1,0 +1,17 @@
+$font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", "돋움", sans-serif;
+$major-color: #4fcbff;
+$shadow-color: rgba(0, 0, 0, 0.3);
+
+@mixin after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@mixin shadow-box($opacity) {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, $opacity);
+}
+
+@mixin shadow-text($opacity) {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, $opacity);
+}
