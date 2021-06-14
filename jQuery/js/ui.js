@@ -30,6 +30,7 @@ var FE =
           slidesToShow: 1,
           slidesToScroll: 1,
         });
+
         $mb.find(".m-banner-btn.prev").on("click", function (e) {
           e.preventDefault();
           mBanner.slick("slickPrev");
@@ -48,6 +49,19 @@ var FE =
           .delay(delay * 2)
           .animate({ bottom: 40, opacity: 1 }, delay);
         mBanner.on("afterChange", function (event, slick, currentSlide) {
+          if (currentSlide === 0) {
+            $mb.addClass("on-1");
+            $mb.removeClass("on-2 on-3 on-4");
+          } else if (currentSlide === 1) {
+            $mb.addClass("on-2");
+            $mb.removeClass("on-1 on-3 on-4");
+          } else if (currentSlide === 2) {
+            $mb.addClass("on-3");
+            $mb.removeClass("on-1 on-2 on-4");
+          } else if (currentSlide === 3) {
+            $mb.addClass("on-4");
+            $mb.removeClass("on-1 on-2 on-3");
+          }
           var $slide = $mb.find(".slick-slide");
           // run effects
           $slide.eq(currentSlide).find(".item").addClass("on");

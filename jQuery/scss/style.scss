@@ -75,8 +75,8 @@ body {
               position: absolute;
               left: 0;
               top: 0;
-              background: $major-color;
               opacity: 0.7;
+              transition: background-color 0.3s;
             }
           }
           .btn-group {
@@ -96,7 +96,7 @@ body {
               width: 80px;
               height: 80px;
               border-radius: 40px;
-              background: $major-color;
+              transition: background-color 0.3s;
               font-size: 0;
               text-indent: -20000px;
               margin-left: 10px;
@@ -197,7 +197,8 @@ body {
     height: 86px;
     text-indent: -20000px;
     font-size: 0;
-    background: $major-color;
+    transition: background-color 0.3s;
+
     z-index: 1000;
     @include shadow-box(0.3);
     &.prev,
@@ -245,8 +246,8 @@ body {
         margin: 0 5px;
         &.slick-active {
           button {
-            background-color: $major-color;
             width: 38px;
+            transition: background-color 0.3s;
           }
         }
         button {
@@ -261,6 +262,74 @@ body {
           }
         }
       }
+    }
+  }
+  &.on-1 {
+    .mv-con {
+      .intro:before {
+        background-color: $major-color-1;
+      }
+      .btn-group a {
+        background-color: $major-color-1;
+      }
+    }
+    .m-banner-btn {
+      background-color: $major-color-1;
+    }
+
+    .m-banner-pager .slick-dots li.slick-active button {
+      background-color: $major-color-1;
+    }
+  }
+  &.on-2 {
+    .mv-con {
+      .intro:before {
+        background-color: $major-color-2;
+      }
+      .btn-group a {
+        background-color: $major-color-2;
+      }
+    }
+    .m-banner-btn {
+      background-color: $major-color-2;
+    }
+
+    .m-banner-pager .slick-dots li.slick-active button {
+      background-color: $major-color-2;
+    }
+  }
+  &.on-3 {
+    .mv-con {
+      .intro:before {
+        background-color: $major-color-3;
+      }
+      .btn-group a {
+        background-color: $major-color-3;
+      }
+    }
+    .m-banner-btn {
+      background-color: $major-color-3;
+    }
+
+    .m-banner-pager .slick-dots li.slick-active button {
+      background-color: $major-color-3;
+    }
+  }
+  &.on-4 {
+    .mv-con {
+      .intro:before {
+        background-color: $major-color-4;
+      }
+      .btn-group a {
+        background-color: $major-color-4;
+      }
+    }
+    .m-banner-btn {
+      background-color: $major-color-4;
+    }
+
+    .m-banner-pager .slick-dots li.slick-active button {
+      background-color: $major-color-4;
     }
   }
 }

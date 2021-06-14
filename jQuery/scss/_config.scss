@@ -1,5 +1,8 @@
 $font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", "돋움", sans-serif;
-$major-color: #4fcbff;
+$major-color-1: rgb(0, 203, 255);
+$major-color-2: rgb(95, 51, 146);
+$major-color-3: rgb(0, 148, 183);
+$major-color-4: rgb(255, 117, 16);
 $shadow-color: rgba(0, 0, 0, 0.3);
 
 @mixin after {
