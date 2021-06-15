@@ -22,7 +22,8 @@
 
 <img src="npmtrends-npm.png" />
 
-- 최근 6개월 가장 높은 stars와 다운로드 수를 차지하고 있는 react-slick, slick를 선택
+- 리액트 버전 npm으로는 최근 6개월 가장 높은 Stars와 Downloads를 차지하고 있는 react-slick를 선택
+- 제이쿼리 버전에서는 swiper가 더 인기가 많았으나, ie 하위 버전까지 잘 돌아가는 slick을 선택
 
 <hr />
 
