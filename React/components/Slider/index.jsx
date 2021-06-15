@@ -46,7 +46,7 @@ const Slider = () => {
       <Slick ref={slickEl} {...settings}>
         {slideData.map((slide) => {
           return (
-            <div>
+            <div key={slide.id}>
               <img className="mv-img" src={slide.img} alt="" />
               <div className="mv-con">
                 <h2 className={classNames({ on: mode === slide.id })}>
@@ -62,12 +62,20 @@ const Slider = () => {
                   className={classNames("btn-group", { on: mode === slide.id })}
                 >
                   {slide.links.home && (
-                    <a href={slide.links.home} class="btn-home" target="_blank">
+                    <a
+                      href={slide.links.home}
+                      className="btn-home"
+                      target="_blank"
+                    >
                       홈 버튼
                     </a>
                   )}
                   {slide.links.play && (
-                    <a href={slide.links.play} class="btn-play" target="_blank">
+                    <a
+                      href={slide.links.play}
+                      className="btn-play"
+                      target="_blank"
+                    >
                       실행 버튼
                     </a>
                   )}
